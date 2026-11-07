@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIX Unity Packages</title>
+<meta name="description" content="Unity tools and packages by NIX (tiennix): NIX Audio and more.">
+<meta property="og:title" content="NIX Unity Packages">
+<meta property="og:description" content="Unity tools and packages by NIX: NIX Audio — clip markers, metadata and an in-editor Audio Studio.">
+<meta property="og:image" content="https://tiennix.github.io/nix-unity-packages/assets/nix-audio/social.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="./"><span class="logo" role="img" aria-label="NIX logo"></span><span>NIX</span></a>
+    <nav>
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <p class="eyebrow">Unity packages</p>
+    <h1>Tools that make Unity games<br><span class="o">sound and feel right.</span></h1>
+    <p class="lead">Editor tools and runtime systems by NIX, built from the framework we use in our own games — tested on Unity 2022.3 LTS and Unity 6.</p>
+    <div class="actions">
+      <a class="btn primary" href="#nix-audio">See NIX Audio</a>
+      <a class="btn" href="#support">Contact support</a>
+    </div>
+  </section>
+
+  <section id="packages" class="wrap">
+    <h2 class="section-title">Packages</h2>
+
+    <article id="nix-audio" class="product">
+      <a class="product-art" href="https://tiennix.github.io/nix-audio-page/"><img src="assets/nix-audio/cover.jpg" alt="NIX Audio cover: waveform with markers and a speaker" width="1200" height="800"></a>
+      <div class="product-body">
+        <div class="badges"><span class="badge">Audio</span><span class="badge">Editor tool</span><span class="badge soon">Asset Store — in review</span></div>
+        <h3><span class="o">NIX</span> Audio</h3>
+        <p class="summary">Play AudioClips with per-clip settings, timed markers that call your code, fades and voice priority — plus an in-editor Audio Studio and a live voice profiler.</p>
+        <pre class="code"><code>AudioPlayer.Instance.Play(swing, transform)
+    .FadeIn(0.2f)
+    .OnMarker("hit", OnHit);</code></pre>
+        <ul class="features">
+          <li><b>Markers</b> placed on the waveform fire callbacks — on every loop.</li>
+          <li><b>Per-clip metadata</b>: volume, random pitch, 3D, priority, limits, cooldown.</li>
+          <li><b>Voice pool</b> with priority-aware stealing; no allocations per Play.</li>
+          <li><b>Audio Studio</b>: edit metadata, place markers, trim, gain, normalize, speed.</li>
+          <li><b>Profiler</b>: voices, audio time, clip memory and markers, frame by frame.</li>
+          <li><b>Demos</b>: showcase scenes and an FPS prototype driven by audio.</li>
+        </ul>
+        <div class="actions">
+          <a class="btn primary" href="https://tiennix.github.io/nix-audio-page/">Documentation</a>
+          <a class="btn" href="https://youtu.be/6Ngv7Hbc3xc">Getting started video</a>
+          <a class="btn" href="https://youtu.be/gGvO5AUvz2A">API in action video</a>
+        </div>
+        <p class="meta">Unity 2022.3 LTS or newer · Unity 6 · Built-in &amp; URP · C# source included</p>
+      </div>
+    </article>
+
+    <div class="videos">
+      <a class="video" href="https://youtu.be/6Ngv7Hbc3xc"><img src="assets/nix-audio/thumb_tutorial.png" alt="Video: NIX Audio — Getting started" width="1280" height="720" loading="lazy"><span>Getting started · 5:47</span></a>
+      <a class="video" href="https://youtu.be/gGvO5AUvz2A"><img src="assets/nix-audio/thumb_api.png" alt="Video: NIX Audio — API in action" width="1280" height="720" loading="lazy"><span>API in action · 2:33</span></a>
+    </div>
+
+    <div class="shots">
+      <img src="assets/nix-audio/01_markers.jpg" alt="Markers on the waveform in Audio Studio" width="960" height="540" loading="lazy">
+      <img src="assets/nix-audio/02_demo.jpg" alt="NIX Audio demo scene" width="960" height="540" loading="lazy">
+      <img src="assets/nix-audio/04_debug.jpg" alt="Profiler window with voices and markers" width="960" height="540" loading="lazy">
+    </div>
+
+    <article class="next">
+      <p class="eyebrow">Coming next</p>
+      <p>More packages from the NIX framework are on the way. Check back here for new releases.</p>
+    </article>
+  </section>
+
+  <section id="about" class="wrap two-col">
+    <h2 class="section-title">About</h2>
+    <div>
+      <p>NIX is the Unity work of <b>tiennix</b>, a game developer. Each package starts as a module in the framework behind our own projects, then gets the documentation, demos and tests it needs to stand on its own.</p>
+      <p>What you can expect from every package: full C# source, XML docs, assembly definitions, no network calls or analytics, and support for Enter Play Mode with Domain Reload disabled.</p>
+    </div>
+  </section>
+
+  <section id="support" class="wrap two-col">
+    <h2 class="section-title">Support</h2>
+    <div>
+      <p>Questions, bug reports and feature requests: <a href="mailto:tientv.dev@gmail.com">tientv.dev@gmail.com</a>. Please include the package version, your Unity version and the steps to reproduce.</p>
+      <p>Package documentation: <a href="https://tiennix.github.io/nix-audio-page/">NIX Audio</a>. Privacy: <a href="privacy.html">our packages collect no data</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span>© 2026 NIX (tiennix)</span>
+  <span><a href="privacy.html">Privacy</a> · <a href="mailto:tientv.dev@gmail.com">tientv.dev@gmail.com</a></span>
+</footer>
+</body>
+</html>
